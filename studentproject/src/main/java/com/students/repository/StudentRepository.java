@@ -9,8 +9,16 @@ import com.students.model.Student;
 public class StudentRepository {
 
         // In-memory storage
-        private List<Student> students = new ArrayList<>();
-        private int idCounter = 1;
+        private static List<Student> students = new ArrayList<>();
+        private static int idCounter = 1;
+
+         // Add some sample data
+    static {
+        students.add(new Student(idCounter++, "Ajin",   "ajin@iamneo.ai",   25, "Java Full Stack"));
+        students.add(new Student(idCounter++, "Priya",  "priya@iamneo.ai",  22, "React Frontend"));
+        students.add(new Student(idCounter++, "Rahul",  "rahul@iamneo.ai",  24, "Spring Boot"));
+    }
+
     
         // Save a new student
         public Student save(String name, String email, int age, String course) {

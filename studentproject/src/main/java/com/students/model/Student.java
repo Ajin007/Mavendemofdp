@@ -26,16 +26,16 @@ public class Student {
     public String getCourse() { return course; }
 
     // Setters
-    public void setName(String name)     { this.name = name; }
-    public void setEmail(String email)   { this.email = email; }
-    public void setAge(int age)          { this.age = age; }
-    public void setCourse(String course) { this.course = course; }
+    // public void setName(String name)     { this.name = name; }
+    // public void setEmail(String email)   { this.email = email; }
+    // public void setAge(int age)          { this.age = age; }
+    // public void setCourse(String course) { this.course = course; }
 
-    @Override
-    public String toString() {
-        return String.format(
-            "| %-4d | %-20s | %-25s | %-4d | %-15s |",
-            id, name, email, age, course
-        );
-    }
+    // @Override
+    // public String toString() {
+    //     return String.format(
+    //         "| %-4d | %-20s | %-25s | %-4d | %-15s |",
+    //         id, name, email, age, course
+    //     );
+    // }
 }
